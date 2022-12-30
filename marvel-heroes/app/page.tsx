@@ -1,5 +1,3 @@
-const HomePage = () => {
-  return <h1>Página inicial</h1>;
-};
+import { HomePageFactory } from "../src/main/factories/pages/HomePageFactory";
 
-export default HomePage;
+export default HomePageFactory;
