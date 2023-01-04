@@ -1,6 +1,6 @@
 "use client";
 import { HomePageLayout } from "../../../view/pages/home/HomePageLayout";
-import { GetHeroesListUsecase } from "../../../data/usecases/heroes/GetHeroesListUsecase";
+import { GetHeroesListUsecase } from "../../../data/usecases/GetHeroesListUsecase";
 import { AxiosHttpClient } from "../../../infra/http/axiosHttpClient";
 
 export const HomePageFactory = () => {

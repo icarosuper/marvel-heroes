@@ -7,7 +7,7 @@ export type HttpRequest = {
 };
 
 export interface IHttpClient {
-  request: <T = any>(data: HttpRequest) => Promise<HttpResponse<T>>;
+  request: <T = any>(params: HttpRequest) => Promise<HttpResponse<T>>;
 }
 
 export type HttpMethod = "post" | "get" | "put" | "patch" | "delete";
@@ -24,6 +24,6 @@ export enum HttpStatusCode {
 }
 
 export type HttpResponse<T = any> = {
-  statusCode: HttpStatusCode;
+  status: HttpStatusCode;
   data: T;
 };

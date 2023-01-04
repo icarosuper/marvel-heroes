@@ -1,10 +1,10 @@
 import {
   GetHeroesListParams,
   IGetHeroesListUsecase,
-} from "../../../domain/usecases/marvel/GetHeroesListUsecase";
-import { IHttpClient } from "../../http/http-client/httpClient";
-import { MarvelHero } from "../../../domain/models/marvel/MarvelHero";
-import { MarvelApiResponse } from "../../../domain/models/marvel/MarvelApiResponse";
+} from "../../domain/usecases/marvel/GetHeroesListUsecase";
+import { IHttpClient } from "../http/http-client/httpClient";
+import { MarvelHero } from "../../domain/models/marvel/MarvelHero";
+import { MarvelApiResponse } from "../../domain/models/marvel/MarvelApiResponse";
 
 export class GetHeroesListUsecase implements IGetHeroesListUsecase {
   constructor(

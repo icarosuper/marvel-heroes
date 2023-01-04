@@ -29,7 +29,7 @@ export class AxiosHttpClient implements IHttpClient {
     }
 
     return {
-      statusCode: axiosResponse.status,
+      status: axiosResponse.status,
       data: axiosResponse.data,
     };
   }
